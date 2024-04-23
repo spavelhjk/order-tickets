@@ -1,0 +1,11 @@
+export const wrap = 1360
+export const desktop = 1200
+export const laptopLg = 1100
+export const hdr = 1030
+export const laptop = 985
+export const laptopXs = 860
+export const tablet = 768
+export const mobileLg = 600
+export const mobileL = 560
+export const mobile = 480
+export const mobileXs = 400

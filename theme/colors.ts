@@ -1,0 +1,8 @@
+export const primary = '#2196f3'
+export const secondary = '#4a4a4a'
+export const thertiary = 'white'
+export const fourthiary = '#b5babc'
+export const fifth = '#f2fcff'
+export const bgPrimary = '#f3f7fa'
+export const bgSecondary = 'white'
+export const bgThertiary = '#ff6d01'

@@ -1,0 +1,137 @@
+[
+  {
+    "id": 0,
+    "logo": "/turkish-airlines.jpeg",
+    "price": {
+      "rub": {
+        "symbol": "Р",
+        "value": 21032
+      },
+      "eur": {
+        "symbol": "€",
+        "value": 210.08
+      },
+      "usd": {
+        "symbol": "$",
+        "value": 224
+      }
+    },
+    "from": {
+      "location": "WO, Владивосток",
+      "date": "2024-04-21"
+    },
+    "to": {
+      "location": "Тель-Авив, TLV",
+      "date": "2024-04-21"
+    },
+    "transfers": 3
+  },
+  {
+    "id": 1,
+    "logo": "/turkish-airlines.jpeg",
+    "price": {
+      "rub": {
+        "symbol": "Р",
+        "value": 21032
+      },
+      "eur": {
+        "symbol": "€",
+        "value": 210.08
+      },
+      "usd": {
+        "symbol": "$",
+        "value": 224
+      }
+    },
+    "from": {
+      "location": "WO, Владивосток",
+      "date": "2024-04-21"
+    },
+    "to": {
+      "location": "Тель-Авив, TLV",
+      "date": "2024-04-21"
+    },
+    "transfers": 2
+  },
+  {
+    "id": 2,
+    "logo": "/turkish-airlines.jpeg",
+    "price": {
+      "rub": {
+        "symbol": "Р",
+        "value": 21032
+      },
+      "eur": {
+        "symbol": "€",
+        "value": 210.08
+      },
+      "usd": {
+        "symbol": "$",
+        "value": 224
+      }
+    },
+    "from": {
+      "location": "WO, Владивосток",
+      "date": "2024-04-21"
+    },
+    "to": {
+      "location": "Тель-Авив, TLV",
+      "date": "2024-04-21"
+    },
+    "transfers": 1
+  },
+  {
+    "id": 3,
+    "logo": "/turkish-airlines.jpeg",
+    "price": {
+      "rub": {
+        "symbol": "Р",
+        "value": 21032
+      },
+      "eur": {
+        "symbol": "€",
+        "value": 210.08
+      },
+      "usd": {
+        "symbol": "$",
+        "value": 224
+      }
+    },
+    "from": {
+      "location": "WO, Владивосток",
+      "date": "2024-04-21"
+    },
+    "to": {
+      "location": "Тель-Авив, TLV",
+      "date": "2024-04-21"
+    },
+    "transfers": 0
+  },
+  {
+    "id": 4,
+    "logo": "/turkish-airlines.jpeg",
+    "price": {
+      "rub": {
+        "symbol": "Р",
+        "value": 21032
+      },
+      "eur": {
+        "symbol": "€",
+        "value": 210.08
+      },
+      "usd": {
+        "symbol": "$",
+        "value": 224
+      }
+    },
+    "from": {
+      "location": "WO, Владивосток",
+      "date": "2024-04-21"
+    },
+    "to": {
+      "location": "Тель-Авив, TLV",
+      "date": "2024-04-21"
+    },
+    "transfers": 1
+  }
+]
