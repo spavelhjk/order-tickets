@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { colors } from '@/theme'
-
 export const FakeInput = styled.span`
   display: inline-block;
   width: 24px;
@@ -23,11 +21,11 @@ export const OriginalInput = styled.input.attrs({
   clip: rect(0 0 0 0);
 
   &:focus + ${FakeInput} {
-    box-shadow: ${colors.primary} 0px 0px 4px;
+    box-shadow: ${props => props.theme.primary} 0px 0px 4px;
   }
 
   &:checked + ${FakeInput} {
-    border-color: ${colors.primary};
+    border-color: ${props => props.theme.primary};
     background: url('/check.svg') 50% 50% no-repeat;
     background-size: 14px;
   }

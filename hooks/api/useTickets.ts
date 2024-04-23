@@ -33,6 +33,7 @@ const useTickets = ({ requestParams }: { requestParams?: object } = {}) => {
     tickets,
     loading,
     error: error || null,
+    getTickets,
   }
 }
 

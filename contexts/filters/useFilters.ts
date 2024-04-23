@@ -1,7 +1,7 @@
 import { useCallback, useState, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-import { Filter, FiltersHashType, CurrencyType } from '@/models/Filter'
+import { FilterType, FiltersHashType, CurrencyType } from '@/models/Filter'
 
 const filtersHash: FiltersHashType = {
   currency: 'rub',
@@ -10,12 +10,12 @@ const filtersHash: FiltersHashType = {
 
 const useFilters = () => {
   const searchParams = useSearchParams()
-  const [filters, setFilters] = useState<Filter[]>([
+  const [filters, setFilters] = useState<FilterType[]>([
     { label: 'currency', value: filtersHash.currency }
   ])
 
   const transformHashToFilters = useCallback((hash: FiltersHashType) => {
-    const filters: Filter[] = []
+    const filters: FilterType[] = []
 
     for (const [label, value] of Object.entries(hash)) {
       if (label === 'currency') {
@@ -28,7 +28,7 @@ const useFilters = () => {
     return filters
   }, [])
 
-  const transformFiltersToHash = useCallback((filters: Filter[]) => {
+  const transformFiltersToHash = useCallback((filters: FilterType[]) => {
     const hash: FiltersHashType = { ...filtersHash }
 
     for (const { label: l, value: v } of filters) {
@@ -55,7 +55,7 @@ const useFilters = () => {
     }
   }, [searchParams, transformHashToFilters])
 
-  const applyFilters = useCallback((filters: Filter[]) => {
+  const applyFilters = useCallback((filters: FilterType[]) => {
     const searchParams = new URLSearchParams(window.location.search)
 
     const filtersHash = transformFiltersToHash(filters)
@@ -68,7 +68,7 @@ const useFilters = () => {
     window.history.pushState({}, document.title, `?${searchParams.toString()}`)
   }, [transformFiltersToHash])
 
-  const changeFilters = useCallback((filters: Filter[]) => {
+  const changeFilters = useCallback((filters: FilterType[]) => {
     applyFilters(filters)
     setFilters(filters)
   }, [applyFilters])

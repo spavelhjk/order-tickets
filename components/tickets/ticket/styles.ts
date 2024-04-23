@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import Image from 'next/image'
 
-import { colors, sizes } from '@/theme'
+import { sizes } from '@/theme'
 
 import Button from '@/components/button'
 import Card from '@/components/card'
@@ -61,7 +61,7 @@ export const Destination = styled.div<{ position?: 'left' | 'right' }>`
   padding-top: 8px;
   width: 50%;
   vertical-align: top;
-  color: ${colors.secondary};
+  color: ${props => props.theme.secondary};
 
   ${({ position }) => position === 'right' && css`
     text-align: right;

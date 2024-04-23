@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { colors } from '@/theme'
-
 import Card from '../card'
 import Currency from './currency'
 
@@ -16,7 +14,7 @@ export const Label = styled.span`
   font-size: 1.1rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: ${colors.secondary};
+  color: ${props => props.theme.secondary};
 `
 
 export const StyledCurrency = styled(Currency)`

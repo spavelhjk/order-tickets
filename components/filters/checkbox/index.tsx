@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 import { Container, OriginalInput, FakeInput, Text } from './styles'
 
@@ -20,4 +20,4 @@ const Checkbox: React.FC<CheckboxProps> = ({ label, name, checked = false, onCha
   )
 }
 
-export default Checkbox
+export default memo(Checkbox)

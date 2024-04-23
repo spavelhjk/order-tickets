@@ -1,7 +1,7 @@
 import React, { useContext, useCallback, useMemo } from 'react'
 
 import FiltersContext from '@/contexts/filters'
-import { CurrencyType, Filter } from '@/models/Filter'
+import { CurrencyType, FilterType } from '@/models/Filter'
 
 import Transfers from './transfers'
 import { Container, Label, StyledCurrency } from './styles'
@@ -13,7 +13,7 @@ export type FiltersProps = {
 const Filters: React.FC<FiltersProps> = ({ className = '' }) => {
   const { filters, changeFilters, transformFiltersToHash, transformHashToFilters } = useContext(FiltersContext)
 
-  const changeFilter = useCallback(({ label, value }: Filter) => {
+  const changeFilter = useCallback(({ label, value }: FilterType) => {
     const hash = transformFiltersToHash(filters)
     if (label === 'currency') {
       hash[label] = value as CurrencyType

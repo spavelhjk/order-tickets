@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import { colors } from '@/theme'
 import Checkbox from '../checkbox'
 
 export const StyledCheckbox = styled(Checkbox)`
@@ -10,7 +9,7 @@ export const StyledCheckbox = styled(Checkbox)`
   transition: 0.4s ease-in-out;
 
   &:hover {
-    background-color: ${colors.fifth};
+    background-color: ${props => props.theme.fifth};
   }
 `
 
@@ -27,20 +26,20 @@ export const OnlyButton = styled.button`
   text-transform: uppercase;
   border: none;
   background-color: transparent;
-  color: ${colors.primary};
+  color: ${props => props.theme.primary};
   opacity: 0;
   cursor: pointer;
   transition: opacity 0.4s ease-in-out;
 
   &:focus {
     outline: none;
-    text-shadow: text-shadow: 2px 2px 4px ${colors.primary};
+    text-shadow: text-shadow: 2px 2px 4px ${props => props.theme.primary};
     opacity: 1;
     transform: translateY(-50%) scale(1);
   }
 
   &:hover + ${StyledCheckbox} {
-    background-color: ${colors.fifth};
+    background-color: ${props => props.theme.fifth};
   }
 `
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 import { Container, OriginalInput, FakeInput } from './styles'
 
@@ -24,4 +24,4 @@ const Radio: React.FC<RadioProps> = ({ label = '', name, value, checked, onChang
   )
 }
 
-export default Radio
+export default memo(Radio)

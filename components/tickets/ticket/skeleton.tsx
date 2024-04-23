@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
-import { colors } from '@/theme'
+import ThemeContext from '@/contexts/theme'
 
 import {
   Container,
@@ -21,6 +21,9 @@ type TicketSkeletonType = {
 }
 
 const TicketSkeleton: React.FC<TicketSkeletonType> = ({ className = '' }) => {
+  const { colors } = useContext(ThemeContext)
+
+
   return (
     <Container className={className}>
       <SkeletonTheme baseColor="#edebeb" highlightColor={colors.fifth}>

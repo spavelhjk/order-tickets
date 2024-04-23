@@ -1,22 +1,22 @@
 export type CurrencyType = 'rub' | 'usd' | 'eur'
 export type FilterLabel = 'currency' | 'transfers'
 
-type BaseFilter = {
+type BaseFilterType = {
   label: FilterLabel
   value: CurrencyType | string
 }
 
-interface CurrencyFilter extends BaseFilter {
+interface CurrencyFilterType extends BaseFilterType {
   label: 'currency'
   value: CurrencyType
 }
 
-interface TransfersFilter extends BaseFilter {
+interface TransfersFilterType extends BaseFilterType {
   label: 'transfers'
   value: string
 }
 
-export type Filter = CurrencyFilter | TransfersFilter
+export type FilterType = CurrencyFilterType | TransfersFilterType
 
 export type FiltersHashType = {
   transfers: string

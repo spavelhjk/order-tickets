@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 
 import { CurrencyType } from '@/models/Filter'
 
@@ -29,4 +29,4 @@ const Currency: React.FC<CurrencyProps> = ({ defaultValue, onChange, className =
   )
 }
 
-export default Currency
+export default memo(Currency)

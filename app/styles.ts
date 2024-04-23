@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import { sizes, colors } from '@/theme'
-import { Filters, Tickets } from '@/components'
+import { Filters, Tickets, SwitchTheme } from '@/components'
 
 export const Container = styled.div`
   margin: 0 auto;
@@ -45,4 +45,9 @@ export const StyledTickets = styled(Tickets)`
   @media (max-width: ${sizes.hdr}px) {
     width: 100%;
   }
+`
+
+export const StyledSwitchTheme = styled(SwitchTheme)`
+  margin-left: 8px;
+  vertical-align: baseline;
 `
