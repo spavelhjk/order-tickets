@@ -14,7 +14,7 @@ const useTickets = ({ requestParams }: { requestParams?: object } = {}) => {
       setLoading(true)
 
       try {
-        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/tickets`, { params: requestParams })
+        const { data } = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}api/tickets`, { params: requestParams })
         setTickets(data)
       } catch (err) {
         setError(err instanceof Error ? err : new Error(String(err)))
